@@ -1,0 +1,30 @@
+@import "../../myTheme";
+
+.header{
+  height:100%;
+  color:$dark-primary-text;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-left:3%;
+
+  }
+
+.headerSearch{
+  width:60%;
+  display:flex;
+
+   *{
+    width:90%;
+    height:35px;
+    border:0.1px solid #bdc2cc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #bdc2cc;
+    padding-left:10px;
+  }
+}
+
+
+.headerProfile{
+  width:30%;
+}

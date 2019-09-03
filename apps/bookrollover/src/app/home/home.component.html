@@ -1,1 +1,58 @@
-<p>home works!</p>
+<div class="home">
+  <div class="homeHeader">
+    <h3>My books</h3>
+    <button mat-raised-button color="primary">
+      <i class="fas fa-plus"></i>
+       Create New</button>
+  </div>
+  <div class="homeTable">
+    <table mat-table [dataSource]="booksToTable">
+      <!-- Book Id -->
+      <ng-container matColumnDef="bookId">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element"  class="tableLink">{{ element.id }}</td>
+      </ng-container>
+
+      <!-- Book Name -->
+      <ng-container matColumnDef="bookName">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Agent Name -->
+      <ng-container matColumnDef="agent">
+        <th mat-header-cell *matHeaderCellDef>Agency</th>
+        <td mat-cell *matCellDef="let element">{{ element.agentReference }}</td>
+      </ng-container>
+
+      <!-- Carrier Name -->
+      <ng-container matColumnDef="carrier">
+        <th mat-header-cell *matHeaderCellDef>Carrier</th>
+        <td mat-cell *matCellDef="let element">
+          {{ element.carrierReference }}
+        </td>
+      </ng-container>
+
+      <!-- Creation Date -->
+      <ng-container matColumnDef="created">
+        <th mat-header-cell *matHeaderCellDef>Created</th>
+        <td mat-cell *matCellDef="let element">{{ element.createdDate }}</td>
+      </ng-container>
+
+      <!-- Updated Date -->
+      <ng-container matColumnDef="updated">
+        <th mat-header-cell *matHeaderCellDef>Last Updated on</th>
+        <td mat-cell *matCellDef="let element">{{ element.updatedDate }}</td>
+      </ng-container>
+
+      <!-- Delete icon -->
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"><i class="fas fa-trash-alt"></i></td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>

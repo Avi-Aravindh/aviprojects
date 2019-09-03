@@ -25,7 +25,7 @@
               "apps/bookrollover/src/favicon.ico",
               "apps/bookrollover/src/assets"
             ],
-            "styles": ["apps/bookrollover/src/styles.scss"],
+            "styles": ["apps/bookrollover/src/myTheme.scss", "apps/bookrollover/src/styles.scss"],
             "scripts": []
           },
           "configurations": {

@@ -1,7 +1,7 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "aviprojects", "camelCase"],
-    "component-selector": [true, "element", "aviprojects", "kebab-case"]
+    "directive-selector": [true, "attribute", "bookrollover", "camelCase"],
+    "component-selector": [true, "element", "bookrollover", "kebab-case"]
   }
 }

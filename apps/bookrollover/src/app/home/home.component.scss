@@ -1,0 +1,53 @@
+.home{
+  height:100%;
+  display:grid;
+  grid-template-rows: 15% 1fr;
+  grid-row-gap: 20px;
+  background-color: #fff;
+  padding-left:3%;
+}
+
+.homeHeader{
+  width:95%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-plus{
+  margin-right:5px;
+  font-size:0.75rem;
+}
+
+.fa-trash-alt{
+  color:#2d15cb !important;
+cursor: pointer;
+}
+
+table{
+  width:95%;
+  background-color:#eeeff1;
+  border:none;
+
+  *{
+    color:black;
+  }
+
+}
+
+.mat-row{
+  background-color:#fff;
+  box-shadow: 0 0 1px 0px #bdc2cc;
+
+  &:hover{
+    box-shadow:2px 0px 5px 0px #000;
+    z-index:500;
+    transition: all 0.20s;
+  }
+}
+
+.tableLink{
+  cursor: pointer;
+
+}
+
